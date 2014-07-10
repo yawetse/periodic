@@ -297,6 +297,7 @@ var install_viaNPM = function(options){
 				});
 			}
 			else{
+				console.log("npm install repourl",repourl);
 				npm.commands.install([repourl], function (err, data) {
 					if (err) {
 						install_logErrorOutput({
